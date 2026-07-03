@@ -22,7 +22,7 @@ export default function AboutSection() {
             {/* Background design elements */}
             <div className="absolute -top-6 -left-6 w-32 h-32 bg-accent/5 rounded-2xl -z-10" />
             <div className="absolute -bottom-6 -right-6 w-40 h-40 bg-slate-100 rounded-full -z-10" />
-            
+
             <div className="relative h-[350px] sm:h-[450px] w-full rounded-2xl overflow-hidden shadow-xl border border-slate-100">
               <Image
                 src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800&auto=format&fit=crop"
@@ -32,10 +32,10 @@ export default function AboutSection() {
                 className="object-cover hover:scale-105 transition-transform duration-500"
               />
             </div>
-            
+
             {/* Experience badge */}
             <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur-sm p-4 rounded-xl shadow-md border border-slate-100 flex items-center gap-3">
-              <span className="font-heading text-3xl font-extrabold text-accent">14+</span>
+              <span className="font-heading text-3xl font-extrabold text-accent">10+</span>
               <span className="text-xs font-semibold text-primary uppercase tracking-wide leading-tight">
                 Years of<br />Authentic Care
               </span>
@@ -50,7 +50,7 @@ export default function AboutSection() {
               align="left"
               className="mb-6!" // Force margin overrides
             />
-            
+
             <p className="text-neutral-gray text-base sm:text-lg font-light leading-relaxed">
               Welcome to Raja Ayurvedic and Unani PVT. LTD. We specialize in providing scientific, personalized Ayurvedic and Unani consultations along with premium herbal products at Saleem Nagar, Malakpet. Directed by certified physician Dr. Jabeen Malik (BUMS | Naturopathy), we address the root causes of chronic ailments to restore natural metabolic balance and physical vitality.
             </p>
