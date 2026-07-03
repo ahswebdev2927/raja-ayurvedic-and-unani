@@ -1,0 +1,23 @@
+# ----------------------------------------------------------------------
+# Next.js Static HTML Export Apache Configuration (.htaccess)
+# Place this in the root directory (public_html) of your Hostinger server.
+# ----------------------------------------------------------------------
+
+# Disable folder/directory listing for security
+Options -Indexes
+
+# Enable Rewrite Engine
+RewriteEngine On
+
+# Serve index.html as the default homepage
+DirectoryIndex index.html
+
+# Custom 404 error page fallback
+ErrorDocument 404 /404.html
+
+# Rewrite rule to serve page.html files for requests without the .html extension
+# Example: visiting /about will internally serve /about.html while maintaining clean URLs
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [L]
