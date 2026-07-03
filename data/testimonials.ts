@@ -11,7 +11,7 @@ export const testimonialsData: Testimonial[] = [
   },
   {
     id: "2",
-    name: "Mohammad Abdul Majeed",
+    name: "Mohammad Abdul Qadir",
     customerImage: "",
     rating: 5,
     review: "I had severe lower back stiffness from sitting long hours at my office desk. The Abhyanga oil massage therapies did wonders. The therapist knew exactly how to release the muscle knots. I can walk now without any pain.",
