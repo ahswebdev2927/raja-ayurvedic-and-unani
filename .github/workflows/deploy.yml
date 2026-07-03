@@ -32,6 +32,6 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./out/
           # If you set FTP_TARGET_DIR in secrets it will use it, otherwise it defaults to public_html/
-          server-dir: ${{ secrets.FTP_TARGET_DIR || 'public_html/' }}
+          server-dir: ${{ secrets.FTP_TARGET_DIR || './' }}
           state-name: .ftp-deploy-sync-state.json
           timeout: 120000
