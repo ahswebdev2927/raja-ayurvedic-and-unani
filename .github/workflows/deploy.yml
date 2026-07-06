@@ -24,18 +24,15 @@ jobs:
       - name: Build and Export Static HTML
         run: npm run build
 
-      - name: Deploy via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: Deploy via LFTP
+        uses: pressidium/lftp-mirror-action@v1
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./out/
-          # If you set FTP_TARGET_DIR in secrets it will use it, otherwise it defaults to public_html/
-          server-dir: ${{ secrets.FTP_TARGET_DIR || './' }}
-          state-name: .ftp-deploy-sync-state.json
-          timeout: 120000
-
-      - name: Reset Sync State (Prevent 550 Deletion Errors)
-        run: |
-          curl -u "${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }}" ftp://${{ secrets.FTP_SERVER }}/ -Q "DELE .ftp-deploy-sync-state.json" || true
+          host: ftp://${{ secrets.FTP_SERVER }}
+          port: '21'
+          user: ${{ secrets.FTP_USERNAME }}
+          pass: ${{ secrets.FTP_PASSWORD }}
+          localDir: './out'
+          remoteDir: './'
+          reverse: 'true'
+          onlyNewer: 'true'
+          options: '--delete'
