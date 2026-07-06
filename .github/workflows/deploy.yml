@@ -35,3 +35,4 @@ jobs:
           server-dir: ${{ secrets.FTP_TARGET_DIR || './' }}
           state-name: .ftp-deploy-sync-state.json
           timeout: 120000
+          server-dir-clean: false
