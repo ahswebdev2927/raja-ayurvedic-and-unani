@@ -16,8 +16,8 @@ export default function ReviewCard({ testimonial }: ReviewCardProps) {
             <Star
               key={idx}
               className={`w-5 h-5 ${idx < testimonial.rating
-                  ? "fill-amber-500 text-amber-500"
-                  : "text-slate-200"
+                ? "fill-amber-500 text-amber-500"
+                : "text-slate-200"
                 }`}
             />
           ))}
@@ -25,7 +25,7 @@ export default function ReviewCard({ testimonial }: ReviewCardProps) {
 
         {/* Testimonial Quote */}
         <blockquote className="text-slate-600 font-light text-base leading-relaxed italic">
-          &quot{testimonial.review}&quot
+          "{testimonial.review}"
         </blockquote>
       </div>
 
