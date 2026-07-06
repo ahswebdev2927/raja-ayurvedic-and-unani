@@ -28,11 +28,11 @@ export const metadata: Metadata = {
     "Ayurveda Store Saleem Nagar"
   ],
   alternates: {
-    canonical: "https://rajaayurvedic.com",
+    canonical: "https://rajaayurvedicandunani.com",
   },
   openGraph: {
     description: "Holistic, doctor-certified Unani & Ayurvedic wellness programs, organic skincare products, and remedies.",
-    url: "https://rajaayurvedic.com",
+    url: "https://rajaayurvedicandunani.com",
     siteName: "Raja Ayurvedic",
     locale: "en_IN",
     type: "website",
@@ -61,12 +61,12 @@ export default function HomePage() {
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "@id": "https://rajaayurvedic.com/#organization",
+    "@id": "https://rajaayurvedicandunani.com/#organization",
     "name": "Raja Ayurvedic",
-    "url": "https://rajaayurvedic.com",
+    "url": "https://rajaayurvedicandunani.com",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://rajaayurvedic.com/images/logo.png",
+      "url": "https://rajaayurvedicandunani.com/images/logo.png",
       "caption": "Raja Ayurvedic Logo"
     },
     "sameAs": [
@@ -80,7 +80,7 @@ export default function HomePage() {
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://rajaayurvedic.com/#localbusiness",
+    "@id": "https://rajaayurvedicandunani.com/#localbusiness",
     "name": "Raja Ayurvedic Wellness Center",
     "image": "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=600&auto=format&fit=crop",
     "telephone": contactConfig.phones[0].value,
@@ -117,12 +117,12 @@ export default function HomePage() {
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "@id": "https://rajaayurvedic.com/#website",
+    "@id": "https://rajaayurvedicandunani.com/#website",
     "name": "Raja Ayurvedic",
-    "url": "https://rajaayurvedic.com",
+    "url": "https://rajaayurvedicandunani.com",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://rajaayurvedic.com/products?search={search_term_string}",
+      "target": "https://rajaayurvedicandunani.com/products?search={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   };

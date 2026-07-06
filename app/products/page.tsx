@@ -19,12 +19,12 @@ export const metadata: Metadata = {
     "Dr Raja Jabeen S.A. BUMS"
   ],
   alternates: {
-    canonical: "https://rajaayurvedic.com/products",
+    canonical: "https://rajaayurvedicandunani.com/products",
   },
   openGraph: {
     title: "Ayurvedic & Unani Products Catalog | Raja Ayurvedic and Unani PVT. LTD",
     description: "Shop our organic oils, Ashwagandha capsules, and Unani formulations under the guidance of Dr. Raja Jabeen S.A. (BUMS).",
-    url: "https://rajaayurvedic.com/products",
+    url: "https://rajaayurvedicandunani.com/products",
     type: "website",
   },
 };
@@ -43,13 +43,13 @@ export default function ProductsPage() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://rajaayurvedic.com"
+        "item": "https://rajaayurvedicandunani.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Products",
-        "item": "https://rajaayurvedic.com/products"
+        "item": "https://rajaayurvedicandunani.com/products"
       }
     ]
   };
@@ -67,7 +67,7 @@ export default function ProductsPage() {
       "price": prod.price ? prod.price.replace("₹", "") : "0.00",
       "priceCurrency": "INR",
       "availability": "https://schema.org/InStock",
-      "url": `https://rajaayurvedic.com/products#${prod.id}`
+      "url": `https://rajaayurvedicandunani.com/products#${prod.id}`
     }
   }));
 

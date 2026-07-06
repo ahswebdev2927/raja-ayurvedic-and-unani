@@ -22,12 +22,12 @@ export const metadata: Metadata = {
     "Kerala Ayurveda FAQ"
   ],
   alternates: {
-    canonical: "https://rajaayurvedic.com/contact",
+    canonical: "https://rajaayurvedicandunani.com/contact",
   },
   openGraph: {
     title: "Contact Us & FAQ | Raja Ayurvedic Wellness Center Kerala",
     description: "Get directions, book appointments, and read common FAQs about our traditional treatments.",
-    url: "https://rajaayurvedic.com/contact",
+    url: "https://rajaayurvedicandunani.com/contact",
     type: "website",
   },
 };
@@ -46,13 +46,13 @@ export default function ContactPage() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://rajaayurvedic.com"
+        "item": "https://rajaayurvedicandunani.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Contact Us",
-        "item": "https://rajaayurvedic.com/contact"
+        "item": "https://rajaayurvedicandunani.com/contact"
       }
     ]
   };
@@ -74,7 +74,7 @@ export default function ContactPage() {
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://rajaayurvedic.com/#localbusiness",
+    "@id": "https://rajaayurvedicandunani.com/#localbusiness",
     "name": "Raja Ayurvedic Wellness Center",
     "image": "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=600&auto=format&fit=crop",
     "telephone": contactConfig.phones[0].value,
@@ -207,7 +207,7 @@ export default function ContactPage() {
         title="Need Custom Formulations or Bulk Orders?"
         description="We ship our doctor-certified organic capsules and skin oils globally. Send our support desk an email for bulk pricing."
         buttonText="Email Support Desk"
-        buttonLink="mailto:support@rajaayurvedic.com"
+        buttonLink="mailto:support@rajaayurvedicandunani.com"
       />
     </>
   );

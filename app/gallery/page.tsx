@@ -17,12 +17,12 @@ export const metadata: Metadata = {
     "Natural Wellness Videos"
   ],
   alternates: {
-    canonical: "https://rajaayurvedic.com/gallery",
+    canonical: "https://rajaayurvedicandunani.com/gallery",
   },
   openGraph: {
     title: "Video Gallery & Instagram Feeds | Raja Ayurvedic Wellness",
     description: "Watch doctor-certified treatments, Panchakarma detox walkthroughs, and organic product highlights in action.",
-    url: "https://rajaayurvedic.com/gallery",
+    url: "https://rajaayurvedicandunani.com/gallery",
     type: "website",
   },
 };
@@ -41,13 +41,13 @@ export default function GalleryPage() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://rajaayurvedic.com"
+        "item": "https://rajaayurvedicandunani.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Video Gallery",
-        "item": "https://rajaayurvedic.com/gallery"
+        "item": "https://rajaayurvedicandunani.com/gallery"
       }
     ]
   };
@@ -55,12 +55,12 @@ export default function GalleryPage() {
   const webpageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": "https://rajaayurvedic.com/gallery/#webpage",
-    "url": "https://rajaayurvedic.com/gallery",
+    "@id": "https://rajaayurvedicandunani.com/gallery/#webpage",
+    "url": "https://rajaayurvedicandunani.com/gallery",
     "name": "Video Gallery - Raja Ayurvedic",
     "description": "Watch our traditional Ayurvedic therapies, Kerala oil massage sessions, and yoga classes.",
     "publisher": {
-      "@id": "https://rajaayurvedic.com/#organization"
+      "@id": "https://rajaayurvedicandunani.com/#organization"
     }
   };
 

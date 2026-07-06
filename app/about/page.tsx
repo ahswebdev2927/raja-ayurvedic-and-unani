@@ -58,13 +58,13 @@ export default function AboutPage() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://rajaayurvedic.com"
+        "item": "https://rajaayurvedicandunani.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "About Us",
-        "item": "https://rajaayurvedic.com/about"
+        "item": "https://rajaayurvedicandunani.com/about"
       }
     ]
   };
@@ -72,12 +72,12 @@ export default function AboutPage() {
   const webpageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": "https://rajaayurvedic.com/about/#webpage",
-    "url": "https://rajaayurvedic.com/about",
+    "@id": "https://rajaayurvedicandunani.com/about/#webpage",
+    "url": "https://rajaayurvedicandunani.com/about",
     "name": "About Us - Raja Ayurvedic & Unani",
     "description": "Learn about Raja Ayurvedic & Unani, our Chief Physician Dr. Raja Jabeen S.A. (BUMS), and our specialities in women's and general health.",
     "publisher": {
-      "@id": "https://rajaayurvedic.com/#organization"
+      "@id": "https://rajaayurvedicandunani.com/#organization"
     }
   };
 

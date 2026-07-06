@@ -21,7 +21,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Raja Ayurvedic - Premium Wellness & Health",
   description: "Experience the timeless wisdom of Ayurveda with our premium quality services and products. Natural healing tailored to your mind-body constitution.",
-  metadataBase: new URL("https://rajaayurvedic.com"),
+  metadataBase: new URL("https://rajaayurvedicandunani.com"),
 };
 
 export default function RootLayout({
