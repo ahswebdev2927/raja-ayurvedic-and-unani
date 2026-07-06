@@ -33,4 +33,9 @@ jobs:
           local-dir: ./out/
           # If you set FTP_TARGET_DIR in secrets it will use it, otherwise it defaults to public_html/
           server-dir: ${{ secrets.FTP_TARGET_DIR || './' }}
+          state-name: .ftp-deploy-sync-state.json
           timeout: 120000
+
+      - name: Reset Sync State (Prevent 550 Deletion Errors)
+        run: |
+          curl -u "${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }}" ftp://${{ secrets.FTP_SERVER }}/ -Q "DELE .ftp-deploy-sync-state.json" || true
