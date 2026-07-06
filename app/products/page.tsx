@@ -10,20 +10,20 @@ import { productsData } from "@/data/products";
 
 export const metadata: Metadata = {
   title: "Ayurvedic & Unani Products Catalog | Raja Ayurvedic and Unani PVT. LTD",
-  description: "Shop our classical Ayurvedic and Unani oils, herbal powders, and wellness remedies. Recommended by BUMS & Naturopathy consultant Dr. Jabeen Malik.",
+  description: "Shop our classical Ayurvedic and Unani oils, herbal powders, and wellness remedies. Recommended by Chief Physician Dr. Raja Jabeen S.A. (BUMS).",
   keywords: [
     "Ayurvedic Products Hyderabad",
     "Unani Medicines Malakpet",
     "Naturopathy Remedies India",
     "Raja Ayurvedic & Unani",
-    "Dr Jabeen Malik BUMS"
+    "Dr Raja Jabeen S.A. BUMS"
   ],
   alternates: {
     canonical: "https://rajaayurvedic.com/products",
   },
   openGraph: {
     title: "Ayurvedic & Unani Products Catalog | Raja Ayurvedic and Unani PVT. LTD",
-    description: "Shop our organic oils, Ashwagandha capsules, and Unani formulations. Dr. Jabeen Malik BUMS Naturopathy consultations.",
+    description: "Shop our organic oils, Ashwagandha capsules, and Unani formulations under the guidance of Dr. Raja Jabeen S.A. (BUMS).",
     url: "https://rajaayurvedic.com/products",
     type: "website",
   },
@@ -76,7 +76,7 @@ export default function ProductsPage() {
     {
       id: "prod-faq-1",
       question: "How do I select the right formulation for my needs?",
-      answer: "Since every individual body type (prakriti) is different, we recommend consulting our chief physician Dr. Jabeen Malik (BUMS | Naturopathy) to receive a customized recommendation."
+      answer: "Since every individual body type is different, we recommend consulting our chief physician Dr. Raja Jabeen S.A. (BUMS) to receive a customized recommendation."
     },
     {
       id: "prod-faq-2",
@@ -104,8 +104,8 @@ export default function ProductsPage() {
     },
     {
       icon: Award,
-      title: "BUMS & Naturopathy Directed",
-      desc: "Supervised directly under Dr. Jabeen Malik, ensuring high professional standards and clinical safety."
+      title: "BUMS Certified Direction",
+      desc: "Supervised directly under Dr. Raja Jabeen S.A. (BUMS), ensuring high professional standards and clinical safety."
     },
     {
       icon: Activity,
@@ -209,8 +209,8 @@ export default function ProductsPage() {
       </section>
 
       <CTA
-        title="Schedule a Consultation with Dr. Jabeen Malik"
-        description="Every body type requires different care. Schedule a virtual or physical session at our Malakpet Saleem Nagar clinic to receive custom Unani, Ayurvedic, and Naturopathy guidance."
+        title="Schedule a Consultation with Dr. Raja Jabeen S.A."
+        description="Every body type requires different care. Schedule a virtual or physical session at our Malakpet Saleem Nagar clinic to receive custom Unani and Ayurvedic guidance."
         buttonText="Get Consultation"
         buttonLink="/contact"
       />

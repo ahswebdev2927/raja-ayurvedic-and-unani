@@ -15,18 +15,17 @@ export default function ReviewCard({ testimonial }: ReviewCardProps) {
           {Array.from({ length: 5 }).map((_, idx) => (
             <Star
               key={idx}
-              className={`w-5 h-5 ${
-                idx < testimonial.rating
+              className={`w-5 h-5 ${idx < testimonial.rating
                   ? "fill-amber-500 text-amber-500"
                   : "text-slate-200"
-              }`}
+                }`}
             />
           ))}
         </div>
 
         {/* Testimonial Quote */}
         <blockquote className="text-slate-600 font-light text-base leading-relaxed italic">
-          "{testimonial.review}"
+          &quot{testimonial.review}&quot
         </blockquote>
       </div>
 

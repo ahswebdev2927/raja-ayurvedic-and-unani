@@ -10,7 +10,7 @@ export const galleryData: GalleryItem[] = [
   {
     id: "gal-1",
     title: "Fatty Liver & Digestion Detox Remedy",
-    description: "A simple, natural home remedy recommended by Dr. Jabeen Malik to detoxify the liver, improve digestion, reduce bloating, and sustain energy levels.",
+    description: "A simple, natural home remedy recommended by Dr. Raja Jabeen S.A. to detoxify the liver, improve digestion, reduce bloating, and sustain energy levels.",
     videoUrl: "/videos/RajaAyurvedic-video-1.mp4",
     instaLink: "https://www.instagram.com/reel/DZkb0hZTj5a/?igsh=bWxrMW04MmJlZnE=",
   },
@@ -24,7 +24,7 @@ export const galleryData: GalleryItem[] = [
   {
     id: "gal-3",
     title: "Remedy for Cough, Cold & Flu",
-    description: "A simple, natural home remedy recommended by Dr. Jabeen Malik to quickly relieve seasonal cough, cold, congestion, and flu symptoms.",
+    description: "A simple, natural home remedy recommended by Dr. Raja Jabeen S.A. to quickly relieve seasonal cough, cold, congestion, and flu symptoms.",
     videoUrl: "/videos/RajaAyurvedic-video-3.mp4",
     instaLink: "https://www.instagram.com/reel/DaAlPa_zpAH/?igsh=YmJjZjJ0aGRzazl2",
   },
@@ -38,7 +38,7 @@ export const galleryData: GalleryItem[] = [
   {
     id: "gal-5",
     title: "Easy Remedy for Gastric Problems",
-    description: "A simple, natural home remedy recommended by Dr. Jabeen Malik to quickly relieve acidity, gas, bloating, and stomach indigestion.",
+    description: "A simple, natural home remedy recommended by Dr. Raja Jabeen S.A. to quickly relieve acidity, gas, bloating, and stomach indigestion.",
     videoUrl: "/videos/RajaAyurvedic-video-5.mp4",
     instaLink: "https://www.instagram.com/reel/DRc4vCnE8Jt/?igsh=aDZiM2N0MmppMHd3",
   },

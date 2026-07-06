@@ -9,19 +9,19 @@ import AboutSection from "@/components/AboutSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import Testimonials from "@/components/Testimonials";
 import { productsData } from "@/data/products";
-import ProductCarousel from "@/components/ProductCarousel";
+
 import { contactConfig } from "@/data/contactConfig";
 
 export const metadata: Metadata = {
   title: "Raja Ayurvedic & Unani | Ayurvedic Consultation & Herbal Products Hyderabad",
-  description: "Authentic Ayurvedic consultation & premium Unani herbal products in Hyderabad. Consult Dr. Jabeen Malik (BUMS | Naturopathy) at Saleem Nagar, Malakpet for custom wellness solutions.",
+  description: "Authentic Ayurvedic consultation & premium Unani herbal products in Hyderabad. Consult Dr. Raja Jabeen S.A. (BUMS) at Saleem Nagar, Malakpet for custom wellness solutions.",
   keywords: [
     "Ayurvedic Consultation Hyderabad",
     "Ayurvedic Products Hyderabad",
     "Ayurveda Doctor Malakpet",
     "Unani Medicines Saleem Nagar",
     "Ayurvedic Clinic Hyderabad",
-    "Dr Jabeen Malik BUMS",
+    "Dr Raja Jabeen S.A. BUMS",
     "Naturopathy Consultant Hyderabad",
     "Classical Ayurvedic Oils Hyderabad",
     "Herbal Remedies Malakpet",
@@ -159,8 +159,11 @@ export default function HomePage() {
             tag="Herbal Products Catalog"
           />
 
-          {/* Product Carousel */}
-          <ProductCarousel products={featuredProducts} />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+            {featuredProducts.map((product) => (
+              <ProductCard key={product.id} product={product} showFeatures={false} />
+            ))}
+          </div>
         </Container>
       </section>
 
@@ -173,7 +176,7 @@ export default function HomePage() {
       {/* 6. Reusable Call to Action Component */}
       <CTA
         title="Begin Your Personal Journey to Natural Healing"
-        description="Connect with our Unani & Naturopathy consultant Dr. Jabeen Malik today to receive a personalized wellness and dietary roadmap."
+        description="Connect with our Unani & Ayurvedic consultant Dr. Raja Jabeen S.A. (BUMS) today to receive a personalized wellness and dietary roadmap."
         buttonText="Schedule a Consultation"
         buttonLink="/contact"
       />

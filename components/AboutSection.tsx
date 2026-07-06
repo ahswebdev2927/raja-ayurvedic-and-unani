@@ -6,10 +6,10 @@ import Button from "./Button";
 import SectionTitle from "./SectionTitle";
 
 const bullets = [
-  "BUMS Unani & Naturopathy Certified Consultant",
+  "Dr. Raja Jabeen S.A. (BUMS) Chief Physician",
   "100% Pure, Organic, and Heavy-Metal Tested Herbs",
-  "Personalized Panchakarma Detox Regimes",
-  "Traditional Kerala Oil Massage Therapies",
+  "Specialized Women's & General Health Treatments",
+  "15+ Years of Dedicated Clinical Experience",
 ];
 
 export default function AboutSection() {
@@ -25,8 +25,8 @@ export default function AboutSection() {
 
             <div className="relative h-[350px] sm:h-[450px] w-full rounded-2xl overflow-hidden shadow-xl border border-slate-100">
               <Image
-                src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800&auto=format&fit=crop"
-                alt="Ayurvedic oil pouring therapy close-up"
+                src="/images/about/RajaAyurvedicandUnani.jpg"
+                alt="Raja Ayurvedic & Unani Clinic consultation"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover hover:scale-105 transition-transform duration-500"
@@ -35,9 +35,9 @@ export default function AboutSection() {
 
             {/* Experience badge */}
             <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur-sm p-4 rounded-xl shadow-md border border-slate-100 flex items-center gap-3">
-              <span className="font-heading text-3xl font-extrabold text-accent">10+</span>
+              <span className="font-heading text-3xl font-extrabold text-accent">15+</span>
               <span className="text-xs font-semibold text-primary uppercase tracking-wide leading-tight">
-                Years of<br />Authentic Care
+                Years of<br />Clinical Practice
               </span>
             </div>
           </div>
@@ -52,7 +52,7 @@ export default function AboutSection() {
             />
 
             <p className="text-neutral-gray text-base sm:text-lg font-light leading-relaxed">
-              Welcome to Raja Ayurvedic and Unani PVT. LTD. We specialize in providing scientific, personalized Ayurvedic and Unani consultations along with premium herbal products at Saleem Nagar, Malakpet. Directed by certified physician Dr. Jabeen Malik (BUMS | Naturopathy), we address the root causes of chronic ailments to restore natural metabolic balance and physical vitality.
+              Welcome to Raja Ayurvedic and Unani PVT. LTD. We specialize in providing scientific, personalized Ayurvedic and Unani consultations along with premium herbal products at Saleem Nagar, Malakpet. Directed by certified physician Dr. Raja Jabeen S.A. (BUMS), we address the root causes of chronic ailments to restore natural metabolic balance and physical vitality.
             </p>
 
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-2">

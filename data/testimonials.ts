@@ -6,7 +6,7 @@ export const testimonialsData: Testimonial[] = [
     name: "Syeda Naaz",
     customerImage: "", // Handled via initials avatar in UI
     rating: 5,
-    review: "The detox therapies at Raja Ayurvedic & Unani clinic were life-changing. I was suffering from chronic fatigue and stress. After a structured session under Dr. Jabeen Malik, I felt completely rejuvenated, energized, and clear-headed. The doctors are caring.",
+    review: "The detox therapies at Raja Ayurvedic & Unani clinic were life-changing. I was suffering from chronic fatigue and stress. After a structured session under Dr. Raja Jabeen S.A., I felt completely rejuvenated, energized, and clear-headed. The doctors are caring.",
     role: "IT Consultant, Gachibowli",
   },
   {
@@ -30,7 +30,7 @@ export const testimonialsData: Testimonial[] = [
     name: "Syed Ahmed",
     customerImage: "",
     rating: 5,
-    review: "The consultation with Dr. Jabeen Malik BUMS was very detailed. She spent an hour assessing my diet, sleep, and lifestyle. The customized herbs and lifestyle plan have fully resolved my long-standing digestive issues. Highly recommended!",
+    review: "The consultation with Dr. Raja Jabeen S.A. (BUMS) was very detailed. She spent an hour assessing my diet, sleep, and lifestyle. The customized herbs and lifestyle plan have fully resolved my long-standing digestive issues. Highly recommended!",
     role: "Business Owner, Malakpet",
   },
   {
@@ -38,7 +38,7 @@ export const testimonialsData: Testimonial[] = [
     name: "Venkateshwara Rao",
     customerImage: "",
     rating: 5,
-    review: "The traditional joint massage therapies and herbal oils gave me immense relief from chronic knee pain. Dr. Jabeen Malik's Unani & Ayurvedic wellness approach is highly scientific and effective. The care they provide is outstanding.",
+    review: "The traditional joint massage therapies and herbal oils gave me immense relief from chronic knee pain. Dr. Raja Jabeen S.A.'s Unani & Ayurvedic wellness approach is highly scientific and effective. The care they provide is outstanding.",
     role: "Retired Govt Officer, Dilsukhnagar",
   }
 ];

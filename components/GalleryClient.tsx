@@ -175,6 +175,7 @@ function GridVideoCard({ item, onSelect }: GridVideoCardProps) {
       <video
         ref={videoRef}
         src={item.videoUrl}
+        preload="none"
         muted
         loop
         playsInline

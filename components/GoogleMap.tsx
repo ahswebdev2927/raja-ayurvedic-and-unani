@@ -6,22 +6,9 @@ export default function GoogleMap() {
   const directionsUrl = `https://www.google.com/maps/search/?api=1&query=17.376272%2C78.509147`;
 
   return (
-    <section className="relative w-full h-[400px] sm:h-[450px] lg:h-[500px] rounded-2xl overflow-hidden shadow-lg border border-slate-100">
-      {/* Interactive Map Frame */}
-      <iframe
-        src={contactConfig.googleMapEmbedUrl}
-        width="100%"
-        height="100%"
-        style={{ border: 0 }}
-        allowFullScreen={false}
-        loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"
-        title={`${contactConfig.companyName} location map`}
-        className="w-full h-full"
-      />
-
-      {/* Floating Address Overlay Card */}
-      <div className="absolute top-4 left-4 right-4 md:left-auto md:right-6 md:top-6 z-10 max-w-sm bg-white/95 backdrop-blur-md p-5 rounded-2xl shadow-xl border border-slate-100 flex gap-4 items-start">
+    <div className="flex flex-col md:block md:relative w-full md:h-[450px] lg:h-[500px]">
+      {/* Address Card: block on mobile, absolute overlay on desktop */}
+      <div className="mb-6 md:mb-0 md:absolute md:right-6 md:top-6 md:z-10 md:max-w-sm w-full bg-white border border-slate-100 p-5 rounded-2xl shadow-sm md:shadow-xl flex gap-4 items-start">
         <div className="p-3 bg-primary/10 text-accent rounded-xl shrink-0">
           <MapPin className="w-5 h-5 sm:w-6 sm:h-6" />
         </div>
@@ -46,6 +33,21 @@ export default function GoogleMap() {
           </a>
         </div>
       </div>
-    </section>
+
+      {/* Interactive Map Frame: occupies full height of parent on desktop, fixed height on mobile */}
+      <div className="w-full h-[320px] md:h-full rounded-2xl overflow-hidden shadow-lg border border-slate-100">
+        <iframe
+          src={contactConfig.googleMapEmbedUrl}
+          width="100%"
+          height="100%"
+          style={{ border: 0 }}
+          allowFullScreen={false}
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          title={`${contactConfig.companyName} location map`}
+          className="w-full h-full"
+        />
+      </div>
+    </div>
   );
 }
