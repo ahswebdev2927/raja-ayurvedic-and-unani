@@ -28,12 +28,12 @@ export const metadata: Metadata = {
     "Ayurveda Store Saleem Nagar"
   ],
   alternates: {
-    canonical: "https://rajaayurvedicandunani.com",
+    canonical: "https://rajaayurvedic.com",
   },
   openGraph: {
     description: "Holistic, doctor-certified Unani & Ayurvedic wellness programs, organic skincare products, and remedies.",
-    url: "https://rajaayurvedicandunani.com",
-    siteName: "Raja Ayurvedic",
+    url: "https://rajaayurvedic.com",
+    siteName: "Raja Ayurvedic & Unani",
     locale: "en_IN",
     type: "website",
     images: [
@@ -61,18 +61,17 @@ export default function HomePage() {
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "@id": "https://rajaayurvedicandunani.com/#organization",
-    "name": "Raja Ayurvedic",
-    "url": "https://rajaayurvedicandunani.com",
+    "@id": "https://rajaayurvedic.com/#organization",
+    "name": "Raja Ayurvedic & Unani",
+    "url": "https://rajaayurvedic.com",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://rajaayurvedicandunani.com/images/logo.png",
-      "caption": "Raja Ayurvedic Logo"
+      "url": "https://rajaayurvedic.com/RajaAyurvedic-logo.jpeg",
+      "caption": "Raja Ayurvedic & Unani Logo"
     },
     "sameAs": [
       contactConfig.socials.facebook,
       contactConfig.socials.instagram,
-      contactConfig.socials.twitter,
       contactConfig.socials.youtube
     ]
   };

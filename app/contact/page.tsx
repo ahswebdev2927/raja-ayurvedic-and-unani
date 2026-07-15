@@ -12,22 +12,23 @@ import { faqData } from "@/data/faq";
 import { contactConfig } from "@/data/contactConfig";
 
 export const metadata: Metadata = {
-  title: "Contact Us & FAQ | Raja Ayurvedic Wellness Center Kerala",
-  description: "Get in touch with Raja Ayurvedic. Find our clinic address in Kerala, phone numbers, opening hours, interactive Google Map, and answers to common FAQs.",
+  title: "Contact Us & FAQ | Raja Ayurvedic & Unani Hyderabad",
+  description: "Get in touch with Raja Ayurvedic and Unani PVT. LTD. Find our clinic address at Saleem Nagar, Malakpet, Hyderabad, call/WhatsApp us at +91 7673963808, and read FAQs.",
   keywords: [
     "Contact Raja Ayurvedic",
-    "Ayurveda Clinic Kerala",
-    "Ayurvedic Doctor Consultation",
-    "Wellness Center Address",
-    "Kerala Ayurveda FAQ"
+    "Ayurveda Clinic Hyderabad",
+    "Ayurvedic Doctor Malakpet",
+    "Saleem Nagar Clinic Address",
+    "Raja Ayurvedic FAQ",
+    "Unani Doctor Hyderabad"
   ],
   alternates: {
-    canonical: "https://rajaayurvedicandunani.com/contact",
+    canonical: "https://rajaayurvedic.com/contact",
   },
   openGraph: {
-    title: "Contact Us & FAQ | Raja Ayurvedic Wellness Center Kerala",
-    description: "Get directions, book appointments, and read common FAQs about our traditional treatments.",
-    url: "https://rajaayurvedicandunani.com/contact",
+    title: "Contact Us & FAQ | Raja Ayurvedic & Unani Hyderabad",
+    description: "Get directions, book appointments, and read common FAQs about our traditional treatments in Hyderabad.",
+    url: "https://rajaayurvedic.com/contact",
     type: "website",
   },
 };

@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Leaf, Mail, Phone, MapPin, ArrowUp } from "lucide-react";
 import Container from "./Container";
 import { contactConfig } from "@/data/contactConfig";
@@ -20,9 +21,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand block */}
           <div className="space-y-4">
-            <Link href="/" className="flex items-center gap-2 group focus:outline-none">
-              <div className="p-1.5 rounded-xl bg-slate-800 text-gold group-hover:bg-accent transition-colors">
-                <Leaf className="w-5 h-5" />
+            <Link href="/" className="flex items-center gap-2.5 group focus:outline-none">
+              <div className="relative w-10 h-10 rounded-xl overflow-hidden shadow-xs border border-slate-700/50 group-hover:border-accent transition-colors shrink-0 bg-white">
+                <Image
+                  src="/RajaAyurvedic-logo.jpeg"
+                  alt="Raja Ayurvedic & Unani Logo"
+                  fill
+                  sizes="40px"
+                  className="object-cover"
+                />
               </div>
               <span className="font-heading text-xl font-bold tracking-tight text-white">
                 Raja<span className="text-accent font-medium">Ayurvedic & Unani</span>
@@ -57,18 +64,7 @@ export default function Footer() {
                   <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
                 </svg>
               </a>
-              <a
-                href={contactConfig.socials.twitter}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 rounded-full bg-slate-800 text-slate-300 hover:bg-accent hover:text-primary transition-colors"
-                aria-label="Twitter (X)"
-              >
-                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
-                </svg>
-              </a>
-              <a
+<a
                 href={contactConfig.socials.youtube}
                 target="_blank"
                 rel="noopener noreferrer"

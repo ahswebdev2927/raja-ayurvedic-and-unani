@@ -7,22 +7,22 @@ import CTA from "@/components/CTA";
 import { galleryData } from "@/data/gallery-data";
 
 export const metadata: Metadata = {
-  title: "Video Gallery & Instagram Feeds | Raja Ayurvedic Wellness",
-  description: "Watch our traditional Ayurvedic therapies, Kerala oil massage sessions, yoga classes, and wellness retreat video reels from our Instagram feed in India.",
+  title: "Instagram Video Gallery | Raja Ayurvedic & Unani Hyderabad",
+  description: "Watch video guide reels and natural remedies by chief physician Dr. Raja Jabeen S.A. (BUMS) covering fatty liver, skin problems, thyroid control, gastric issues, and viral fever relief.",
   keywords: [
     "Ayurvedic Video Gallery",
     "Ayurveda Instagram Reels",
-    "Traditional Massage Videos",
-    "Kerala Retreat Video Logs",
-    "Natural Wellness Videos"
+    "Dr Raja Jabeen S.A. Videos",
+    "Natural Remedy Reels",
+    "Raja Ayurvedic Hyderabad Videos"
   ],
   alternates: {
-    canonical: "https://rajaayurvedicandunani.com/gallery",
+    canonical: "https://rajaayurvedic.com/gallery",
   },
   openGraph: {
-    title: "Video Gallery & Instagram Feeds | Raja Ayurvedic Wellness",
-    description: "Watch doctor-certified treatments, Panchakarma detox walkthroughs, and organic product highlights in action.",
-    url: "https://rajaayurvedicandunani.com/gallery",
+    title: "Instagram Video Gallery | Raja Ayurvedic & Unani Hyderabad",
+    description: "Watch doctor-certified treatments, Unani health reels, and organic product highlights in action.",
+    url: "https://rajaayurvedic.com/gallery",
     type: "website",
   },
 };

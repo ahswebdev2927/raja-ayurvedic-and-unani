@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X, Leaf } from "lucide-react";
 import Container from "./Container";
@@ -59,11 +60,18 @@ export default function Header() {
             {/* Logo */}
             <Link
               href="/"
-              className="flex items-center gap-2 group focus-visible:outline-none"
+              className="flex items-center gap-2.5 group focus-visible:outline-none"
               aria-label="Raja Ayurvedic Home"
             >
-              <div className="p-1.5 rounded-xl bg-primary text-gold group-hover:bg-accent transition-colors">
-                <Leaf className="w-5 h-5" />
+              <div className="relative w-10 h-10 rounded-xl overflow-hidden shadow-xs border border-slate-100 group-hover:border-accent transition-colors shrink-0 bg-white">
+                <Image
+                  src="/RajaAyurvedic-logo.jpeg"
+                  alt="Raja Ayurvedic & Unani Logo"
+                  fill
+                  sizes="40px"
+                  priority
+                  className="object-cover"
+                />
               </div>
               <span className="font-heading text-lg sm:text-xl font-bold tracking-tight text-primary">
                 Raja<span className="text-accent font-medium">Ayurvedic & Unani</span>

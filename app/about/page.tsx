@@ -1,10 +1,33 @@
 import React from "react";
+import type { Metadata } from "next";
 import Image from "next/image";
 import { Leaf, Shield, Heart, Eye, HeartPulse, Activity } from "lucide-react";
 import Container from "@/components/Container";
 import PageHero from "@/components/PageHero";
 import SectionTitle from "@/components/SectionTitle";
 import CTA from "@/components/CTA";
+
+export const metadata: Metadata = {
+  title: "About Us | Raja Ayurvedic & Unani Hyderabad",
+  description: "Learn about Raja Ayurvedic and Unani PVT. LTD. directed by chief physician Dr. Raja Jabeen S.A. (BUMS) at Saleem Nagar, Malakpet, Hyderabad. Explore our 15+ years of clinical experience, holistic philosophy, and specialized herbal treatments.",
+  keywords: [
+    "About Raja Ayurvedic",
+    "Dr Raja Jabeen S.A.",
+    "Ayurvedic Doctor Hyderabad",
+    "BUMS Doctor Hyderabad",
+    "Unani Clinic Malakpet",
+    "Clinical Specialities Hyderabad"
+  ],
+  alternates: {
+    canonical: "https://rajaayurvedic.com/about",
+  },
+  openGraph: {
+    title: "About Us | Raja Ayurvedic & Unani Hyderabad",
+    description: "Meet Dr. Raja Jabeen S.A. (BUMS) and learn about our traditional, chemical-free herbal treatments in Hyderabad.",
+    url: "https://rajaayurvedic.com/about",
+    type: "website",
+  },
+};
 
 const values = [
   {
