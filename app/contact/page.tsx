@@ -166,9 +166,8 @@ export default function ContactPage() {
                   title="Consulting Hours"
                   details={
                     <p>
-                      <span>Monday - Friday: 8:00 AM - 7:00 PM</span><br />
-                      <span>Saturday: 9:00 AM - 5:00 PM</span><br />
-                      <span className="text-amber-600 font-medium">Sunday: Closed for deep cleaning</span>
+                      <span>Monday - Saturday: 10:00 AM - 6:00 PM</span><br />
+                      <span className="text-amber-600 font-medium">Sunday: Closed</span>
                     </p>
                   }
                 />

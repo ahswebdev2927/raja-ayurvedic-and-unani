@@ -144,7 +144,7 @@ export default function Footer() {
           {/* Hours */}
           <div className="space-y-4">
             <h3 className="font-heading text-white text-base font-semibold uppercase tracking-wider">
-              Business Hours
+              Consulting Hours
             </h3>
             <ul className="space-y-2.5 text-sm font-light">
               <li className="flex justify-between">

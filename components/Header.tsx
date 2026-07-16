@@ -8,6 +8,7 @@ import { Menu, X, Leaf } from "lucide-react";
 import Container from "./Container";
 import Button from "./Button";
 import { useScroll } from "@/hooks/useScroll";
+import { contactConfig } from "@/data/contactConfig";
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -102,8 +103,13 @@ export default function Header() {
 
             {/* Desktop CTA Button */}
             <div className="hidden md:block">
-              <Button href="/contact" variant="primary" size="sm" className="animate-cta-pulse">
-                Book Appointment
+              <Button 
+                href={`${contactConfig.whatsapp.link}?text=${encodeURIComponent("Hello Dr. Raja Jabeen S.A., I would like to book a consultation at Raja Ayurvedic & Unani.")}`} 
+                variant="primary" 
+                size="sm" 
+                className="animate-cta-pulse"
+              >
+                Book Consultation
               </Button>
             </div>
 
@@ -150,8 +156,13 @@ export default function Header() {
           </ul>
 
           <div className="mt-8 space-y-4">
-            <Button href="/contact" variant="primary" size="lg" className="w-full">
-              Book Appointment
+            <Button 
+              href={`${contactConfig.whatsapp.link}?text=${encodeURIComponent("Hello Dr. Raja Jabeen S.A., I would like to book a consultation at Raja Ayurvedic & Unani.")}`} 
+              variant="primary" 
+              size="lg" 
+              className="w-full"
+            >
+              Book Consultation
             </Button>
           </div>
         </nav>

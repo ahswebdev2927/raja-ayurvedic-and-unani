@@ -4,6 +4,7 @@ import { CheckCircle2 } from "lucide-react";
 import Container from "./Container";
 import Button from "./Button";
 import SectionTitle from "./SectionTitle";
+import { contactConfig } from "@/data/contactConfig";
 
 const bullets = [
   "Dr. Raja Jabeen S.A. (BUMS) Chief Physician",
@@ -68,7 +69,12 @@ export default function AboutSection() {
               <Button href="/about" variant="primary" size="md">
                 Learn More About Us
               </Button>
-              <Button href="/contact" variant="ghost" size="md" className="group">
+              <Button 
+                href={`${contactConfig.whatsapp.link}?text=${encodeURIComponent("Hello Dr. Raja Jabeen S.A., I would like to book a consultation at Raja Ayurvedic & Unani.")}`} 
+                variant="ghost" 
+                size="md" 
+                className="group"
+              >
                 <span>Book Consultation</span>
                 <span className="inline-block transform group-hover:translate-x-1.5 transition-transform ml-1">→</span>
               </Button>
